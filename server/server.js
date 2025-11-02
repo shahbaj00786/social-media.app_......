@@ -11,6 +11,7 @@ import postRouter from "./routes/postRoutes.js";
 import storyRouter from "./routes/storyRouter.js";
 import messageRouter from "./routes/messageRoute.js";
 
+const app = express();
 
 app.use(cors({
   origin: [
@@ -19,7 +20,6 @@ app.use(cors({
   credentials: true
 }));
 
-const app = express();
 
 await connectDB();
 
