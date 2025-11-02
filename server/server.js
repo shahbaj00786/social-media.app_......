@@ -15,7 +15,7 @@ const app = express();
 
 app.use(cors({
   origin: [
-    "http://localhost:5173", 
+    "https://social-media-app-31kp.vercel.app", 
   ],
   credentials: true
 }));
